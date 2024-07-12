@@ -8,6 +8,11 @@ public struct CustomColorPickerView: View {
     @Binding var selectedColor: Color
     @Binding var showColorPicker: Bool
 
+    public init(selectedColor: Binding<Color>, showColorPicker: Binding<Bool>) {
+        self._selectedColor = selectedColor
+        self._showColorPicker = showColorPicker
+    }
+    
     public var body: some View {
         VStack(alignment: .leading) {
             HStack {
