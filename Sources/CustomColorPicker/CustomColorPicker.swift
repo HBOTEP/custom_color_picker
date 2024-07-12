@@ -117,7 +117,7 @@ public struct CustomColorPickerView: View {
     }
 }
 
-extension Color {
+public extension Color {
     init(hex: String) {
         let scanner = Scanner(string: hex)
         var rgbValue: UInt64 = 0
